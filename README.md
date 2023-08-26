@@ -1,23 +1,22 @@
-# Food From My Favorite Place
-## This is an app that lets you order and have delivery from your favorite restaurants.
+# Soap by Seá
+## This is an app for purchasing and subscribing for handmade soap.
 
 ------------------------------------------------------------------------------
 
-## This is a food ordering app used for educational purposes. It is mainly for testing full stack web development.
+## This is an e-Commerce site for purchasing soap.
 
 ------------------------------------------------------------------------------
 
 ## Future Roadmap
 
-## Will integrate multiple restaurants from the location of the user.
+## Will integrate multiple soap types for the clientele.
 
 ## User feedback, such as , stars or thumbs up.
 
-## Add background video showing live action cooking.
+## Add background video showing live action soap video.
 
-## Add search bar in dishes for the rerstaurant dishes.
+## Add search bar in soaps for specific types of soap.
 
 ## add availability, i.e. we cn stock the items until they run out.
 
-## 
-![working](https://github.com/Michael-Yount/Food_From_My_Favorite_Place/assets/11709807/4cbbc7f2-a9a8-48cd-bd09-9598911d6892)
+## add backend inventory thta can be managed by the client.
