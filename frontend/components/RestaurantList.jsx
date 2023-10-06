@@ -35,7 +35,7 @@ function RestaurantCard({ data }) {
           src={`${process.env.STRAPI_URL || "http://127.0.0.1:1337"}${
             data.attributes.image.data.attributes.url
           }`}
-          alt="Restaurant Photo"
+          alt="soap_photo"
         />
         <div className="p-8">
           <h3 className="mb-3 font-heading text-xl text-gray-900 hover:text-gray-700 group-hover:underline font-black">
@@ -63,7 +63,7 @@ function RestaurantCard({ data }) {
 function RestaurantList(props) {
   const { loading, error, data } = useQuery(QUERY);
 
-  if (error) return "Error loading restaurants";
+  if (error) return "Error loading soaps";
   if (loading) return <Loader />;
 
   if (data.restaurants.data && data.restaurants.data.length) {

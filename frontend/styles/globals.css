@@ -1,3 +1,6 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 
 .background {
@@ -5,10 +8,12 @@
 }
 
 html,
+
 body {
   padding: 0;
   margin: 0;
-   font-family: 'WindSong', cursive;
+  background-color: rgb(17, 21, 44);
+  color: aliceblue;
 }
 
 a {
@@ -20,24 +25,18 @@ a {
   box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: rgb(255, 255, 255);
-    background: rgb(10, 31, 23);
-  }
-}
-
 .navbar {
-  background-color: rgb(22, 85, 64);
+  background: radial-gradient(circle, rgba(246,246,252,1) 5%, rgba(163, 215, 236, 0.575) 80%);
+
+  border-radius: 2rem;
 }
 
 .title {
+  color: rgb(24, 50, 19);
   font-size: 3rem;
 }
 
 .links {
   font-size: 2rem;
+  color: rgb(16, 49, 30);
 }

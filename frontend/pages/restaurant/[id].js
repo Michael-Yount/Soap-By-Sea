@@ -64,7 +64,7 @@ function DishCard({ data }) {
             <h3 className="font-heading text-xl text-gray-900 hover:text-gray-700 group-hover:underline font-black">
               {data.attributes.name}
             </h3>
-            <h2>${centsToDollars(data.attributes.price)}</h2>
+            <h2>${(data.attributes.price)}</h2>
           </div>
           <p className="text-sm text-gray-500 font-bold">
             {data.attributes.description}
@@ -113,6 +113,6 @@ export default function Restaurant() {
       </div>
     );
   } else {
-    return <h1>No Dishes Found</h1>;
+    return <h1>No Soap Found</h1>;
   }
 }
