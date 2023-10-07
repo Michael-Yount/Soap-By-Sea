@@ -32,6 +32,9 @@ a {
 }
 
 .title {
+  font-family: 'Dancing Script', cursive;
+
+
   color: rgb(24, 50, 19);
   font-size: 3rem;
 }
@@ -40,3 +43,4 @@ a {
   font-size: 2rem;
   color: rgb(16, 49, 30);
 }
+

@@ -1,5 +1,4 @@
 import { gql, useQuery } from "@apollo/client";
-import { centsToDollars } from "@/utils/centsToDollars";
 import { useRouter } from "next/router";
 
 import Image from "next/image";
@@ -7,14 +6,14 @@ import Loader from "@/components/Loader";
 import { useAppContext } from "../../context/AppContext";
 
 
-const GET_RESTAURANT_DISHES = gql`
+const GET_SOAPTYPE_SOAPS = gql`
   query ($id: ID!) {
-    restaurant(id: $id) {
+    soaptypes(id: $id) {
       data {
         id
         attributes {
           name
-          dishes {
+          soaps {
             data {
               id
               attributes {
@@ -37,7 +36,7 @@ const GET_RESTAURANT_DISHES = gql`
   }
 `;
 
-function DishCard({ data }) {
+function SoapCard({ data }) {
   const { addItem, setShowCart } = useAppContext();
     // will add some logic here
 
@@ -57,7 +56,7 @@ function DishCard({ data }) {
           src={`${process.env.STRAPI_URL || "http://127.0.0.1:1337"}${
             data.attributes.image.data.attributes.url
           }`}
-          alt="dish image"
+          alt="soap image"
         />
         <div className="p-8">
           <div className="group inline-block mb-4" href="#">
@@ -85,27 +84,27 @@ function DishCard({ data }) {
   );
 }
 
-export default function Restaurant() {
+export default function Soap() {
   const router = useRouter();
-  const { loading, error, data } = useQuery(GET_RESTAURANT_DISHES, {
+  const { loading, error, data } = useQuery(GET_SOAPTYPE_SOAPS, {
     variables: { id: router.query.id },
   });
 
-  if (error) return "Error Loading Dishes";
+  if (error) return "Error Loading Soaps";
   if (loading) return <Loader />;
-  if (data.restaurant.data.attributes.dishes.data.length) {
-    const { restaurant } = data;
+  if (data.soaptype.data.attributes.soap.data.length) {
+    const { soaptype } = data;
 
     return (
       <div className="py-6">
         <h1 className="text-4xl font-bold text-green-600">
-          {restaurant.data.attributes.name}
+          {soaptype.data.attributes.name}
         </h1>
         <div className="py-16 px-8 bg-white rounded-3xl">
           <div className="max-w-7xl mx-auto">
             <div className="flex flex-wrap -m-4 mb-6">
-              {restaurant.data.attributes.dishes.data.map((res) => {
-                return <DishCard key={res.id} data={res} />;
+              {soaptype.data.attributes.soap.data.map((res) => {
+                return <SoapCard key={res.id} data={res} />;
               })}
             </div>
           </div>

@@ -90,7 +90,7 @@ export default function Layout(props) {
       </Head>
       <Navigation />
       <Cart />
-      <div className="container mx-auto px-4">{props.children}</div>
+      <div className="container mt-6 px-4">{props.children}</div>
     </div>
   );
 }
