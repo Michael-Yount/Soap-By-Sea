@@ -43,4 +43,7 @@ a {
   font-size: 2rem;
   color: rgb(16, 49, 30);
 }
+.cart {
+  background: linear-gradient(51deg, rgb(204, 204, 224) 0%, rgb(196, 196, 221) 29%, rgba(93, 72, 93, 0.669) 100%);
+}
 

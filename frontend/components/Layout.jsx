@@ -19,7 +19,7 @@ function Navigation() {
 
   return (
     <header className="bg-yellow-800 background navbar">
-      <nav className="mt-4 flex justify-between p-4 px-4">
+      <nav className="mt-4 flex justify-between p-4 px-2">
         <div className="flex justify-between items-center w-full mx-16">
           <div className="xl:w-1/3">
             <Link

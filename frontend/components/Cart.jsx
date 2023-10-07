@@ -56,7 +56,7 @@ export default function Cart() {
   }
 
   return (
-    <section className="fixed right-20 top-[242px]">
+    <section className="fixed right-5 top-[220px]">
       <div className="relative">
         <button
           onClick={() => setShowCart((prevState) => !prevState)}
@@ -79,7 +79,7 @@ export default function Cart() {
           </svg>
         </button>
         {showCart && (
-          <div className="rounded-3xl co bg-gray-800 background">
+          <div className="rounded-3xl co bg-gray-800 background cart">
             <div className="max-w-lg pt-6 pb-8 px-8 mx-auto">
               <div className="flex mb-10 items-center justify-between">
                 <h6 className="font-bold text-2xl text-white mb-0">
