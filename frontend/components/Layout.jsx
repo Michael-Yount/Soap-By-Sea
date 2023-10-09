@@ -26,7 +26,7 @@ function Navigation() {
         <div className="flex justify-between items-center w-full mx-16">
           <div className="xl:w-1/3">
             <Link
-              className="block text-2xl max-w-max text-white font-medium title"
+              className="block text-2xl max-w-max text-white font-medium title "
               href="/"
             >
               Soap by Seá
