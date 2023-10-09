@@ -4,12 +4,13 @@
 
 
 .background {
-    box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.556);
+    box-shadow: .1rem 1rem 1rem rgba(101, 174, 237, 0.506);
 }
 
 html,
 
 body {
+
   padding: 0;
   margin: 0;
   background-color: rgb(230, 232, 243);
@@ -23,29 +24,44 @@ a {
 
 * {
   box-sizing: border-box;
+  font-family: 'Volkhov', serif;
 }
 
 .navbar {
-  background: radial-gradient(circle, rgba(246,246,252,1) 5%, rgba(208, 225, 231, 0.575) 80%);
+  background: radial-gradient(circle, rgb(204, 204, 252) 5%, rgba(106, 213, 252, 0.575) 80%);
 
-  border-radius: 2rem;
 }
 
 .title {
-  font-family: 'Dancing Script', cursive;
+  font-family: 'Volkhov', serif;
 
 
-  color: rgb(24, 50, 19);
+  color: rgb(133, 12, 141);
   font-size: 3rem;
 }
 
 .links {
   font-size: 2rem;
-  color: rgb(16, 49, 30);
+  color: rgb(120, 6, 164);
 }
 .cart {
   background-color: black;
-  background: linear-gradient(51deg, rgb(213, 213, 245) 0%, rgb(148, 148, 212) 40%, rgba(61, 53, 61, 0.72) 100%);
+  background: linear-gradient(51deg, rgb(94, 94, 208) 0%, rgba(50, 50, 109, 0.805) 40%, rgba(76, 37, 76, 0.856) 100%);
 
 }
+
+.span {
+  width: 10rem;
+  aspect-ratio: 1;
+  box-shadow: inset 1rem 1rem .5rem rgba(70, 6, 6, 0.503),
+              inset -.5rem -.5rem -.5rem rgba(248, 248, 255, 0.136);
+  position: absolute;
+  border-radius: 50rem;
+  top: 100%;
+              
+
+}
+
+
+
 

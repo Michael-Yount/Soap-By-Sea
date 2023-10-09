@@ -1,3 +1,5 @@
+
+
 import { useAppContext } from "@/context/AppContext";
 import { useRouter } from "next/router";
 
@@ -62,21 +64,9 @@ export default function Cart() {
           onClick={() => setShowCart((prevState) => !prevState)}
           className="absolute right-0 z-10 bg-green-400 text-black p-3 rounded-full hover:bg-yellow-500 items-center"
         >
-          <svg
-            width="24"
-            height="24"
-            viewBox="0 0 16 18"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M11.3334 8.16667V4.83333C11.3334 2.99238 9.84099 1.5 8.00004 1.5C6.15909 1.5 4.66671 2.99238 4.66671 4.83333V8.16667M2.16671 6.5H13.8334L14.6667 16.5H1.33337L2.16671 6.5Z"
-              stroke="currentColor"
-              strokeWidth="1.5"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            ></path>
-          </svg>
+         <span class="material-symbols-outlined">
+          cart
+        </span>
         </button>
         {showCart && (
           <div className="rounded-3xl co bg-gray-800 background cart">
