@@ -28,7 +28,7 @@ a {
 }
 
 .navbar {
-  background: radial-gradient(circle, rgb(204, 204, 252) 5%, rgba(106, 213, 252, 0.575) 80%);
+  background: radial-gradient(circle, rgba(204, 204, 252, 0.493) 5%, rgba(106, 213, 252, 0.402) 80%);
 
 }
 
@@ -61,6 +61,8 @@ a {
               
 
 }
+
+
 
 
 

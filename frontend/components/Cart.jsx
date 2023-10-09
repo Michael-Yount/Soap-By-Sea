@@ -1,4 +1,4 @@
-
+import 'material-icons/iconfont/material-icons.css';
 
 import { useAppContext } from "@/context/AppContext";
 import { useRouter } from "next/router";

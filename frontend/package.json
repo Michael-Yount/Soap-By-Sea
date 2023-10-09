@@ -19,6 +19,7 @@
     "framer-motion": "^10.16.4",
     "graphql": "^16.8.1",
     "js-cookie": "^3.0.5",
+    "material-icons": "^1.13.12",
     "mongodb": "5.7",
     "next": "13.4.16",
     "postcss": "8.4.28",

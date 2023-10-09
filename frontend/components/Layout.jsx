@@ -1,3 +1,5 @@
+
+
 import dynamic from "next/dynamic";
 import { useRouter } from "next/router";
 import { useAppContext } from "@/context/AppContext";
@@ -18,7 +20,7 @@ function Navigation() {
   }
 
   return (
-    <header className="bg-yellow-800 background navbar">
+    <header className="bg-yellow-800 background navbar sticky top-0">
 
       <nav className="mx-4 flex justify-between p-4 px-2">
         <div className="flex justify-between items-center w-full mx-16">
