@@ -8,7 +8,7 @@ import { useAppContext } from "../../context/AppContext";
 
 const GET_SOAPTYPE_SOAPS = gql`
   query ($id: ID!) {
-    soaptypes(id: $id) {
+    soaptype(id: $id) {
       data {
         id
         attributes {
@@ -54,7 +54,7 @@ function SoapCard({ data }) {
           height={300}
           width={300}
           src={`${process.env.STRAPI_URL || "http://127.0.0.1:1337"}${
-            data.attributes.image.data[0].attributes.url
+            data.attributes.image.data.attributes.url
           }`}
           alt="soap image"
         />
@@ -92,24 +92,22 @@ export default function Soap() {
 
   if (error) return "Error Loading Soaps";
   if (loading) return <Loader />;
-  if (data.soaptypes.data.attributes.soaps.data.length) {
-    const { soaptypes } = data;
+  if (data.soaptype.data.attributes.soaps.data.length) {
+    const { soaptype } = data;
 
     return (
       <div className="py-6">
         <h1 className="text-4xl font-bold text-green-600">
-          {soaptypes.data.attributes.name}
+          {soaptype.data.attributes.name}
         </h1>
-        <div className="py-16 px-8 bg-white rounded-3xl">
           <div className="max-w-7xl mx-auto">
             <div className="flex flex-wrap -m-4 mb-6">
-              {soaptypes.data.attributes.soaps.data.map((res) => {
+              {soaptype.data.attributes.soaps.data.map((res) => {
                 return <SoapCard key={res.id} data={res} />;
               })}
             </div>
           </div>
         </div>
-      </div>
     );
   } else {
     return <h1>No Soap Found</h1>;

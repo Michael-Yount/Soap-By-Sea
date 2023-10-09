@@ -36,13 +36,13 @@ function Navigation() {
           <div className="xl:block xl:w-1/3">
             <div className="flex items-center justify-end">
               <Link
-                className="text-gray-50  hover:text-yellow-200 font-medium links"
+                className="px-5 text-gray-50  hover:text-yellow-200 font-medium links"
                 href="/"
               >
                 Home
               </Link>
 
-              <div className="hxl:block">
+              <div className="hxl:block px-5">
                 {user ? (
                   <div className="flex items-center justify-end">
                     <span className="inline-block py-2 px-4 mr-2 leading-5 text-gray-50  hover:text-gray-100 bg-transparent font-medium rounded-md links">
