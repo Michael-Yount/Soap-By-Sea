@@ -1,7 +1,9 @@
-import 'material-icons/iconfont/material-icons.css';
+import Image from "next/image";
 
 import { useAppContext } from "@/context/AppContext";
 import { useRouter } from "next/router";
+
+import cartIcon from '../public/shopping_cart_FILL0_wght400_GRAD0_opsz24.svg'
 
 function CartItem({ data }) {
   const { addItem, removeItem } = useAppContext();
@@ -64,9 +66,12 @@ export default function Cart() {
           onClick={() => setShowCart((prevState) => !prevState)}
           className="absolute right-0 z-10 bg-green-400 text-black p-3 rounded-full hover:bg-yellow-500 items-center"
         >
-         <span class="material-symbols-outlined">
-          cart
-        </span>
+        <Image
+          src={cartIcon}
+          alt="cart_icon"
+          width={32}
+          height={32}    
+        />
         </button>
         {showCart && (
           <div className="rounded-3xl co bg-gray-800 background cart">

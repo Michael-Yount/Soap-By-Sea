@@ -5,10 +5,12 @@ export default function Document() {
     <Html lang="en">
       <Head />
       <link rel="preconnect" href="https://fonts.googleapis.com"/>
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin={"crossOrigin"}/>
       <link href="https://fonts.googleapis.com/css2?family=Volkhov:wght@700&display=swap" rel="stylesheet"/>
 
-      <link href="/path/to/material-icons/css/material-icons.css" rel="stylesheet"/>
+      
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin={"crossOrigin"} />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
       <body>
 
         <Main />
