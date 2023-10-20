@@ -4,7 +4,7 @@
 
 
 .background {
-    box-shadow: .1rem 1rem 1rem rgba(101, 174, 237, 0.506);
+    box-shadow: .1rem 1rem 1rem rgba(41, 98, 148, 0.471);
 }
 
 html,
@@ -13,7 +13,7 @@ body {
 
   padding: 0;
   margin: 0;
-  background-color: rgb(231, 234, 255);
+  background-color: rgb(212, 216, 243);
   color: rgb(252, 253, 255);
 }
 
@@ -28,24 +28,24 @@ a {
 }
 
 .navbar {
-  background: radial-gradient(circle, rgba(204, 204, 252, 0.493) 5%, rgba(106, 213, 252, 0.402) 80%);
+  background: radial-gradient(circle, rgba(204, 204, 252, 0.74) 5%, rgba(106, 213, 252, 0.722) 80%);
 
 }
 
 .title {
   font-family: 'Volkhov', serif;
-  color: rgb(133, 12, 141);
-  font-size: 3rem;
+  color: rgb(116, 23, 139);
+  font-size: 2rem;
 }
 
 
 .links {
-  font-size: 2rem;
-  color: rgb(120, 6, 164);
+  font-size: 1.5rem;
+  color: rgb(55, 20, 68);
 }
 .cart {
   background-color: black;
-  background: linear-gradient(51deg, rgb(94, 94, 208) 0%, rgba(50, 50, 109, 0.805) 40%, rgba(76, 37, 76, 0.856) 100%);
+  background: linear-gradient(51deg, rgb(61, 61, 95) 0%, rgba(39, 39, 59, 0.805) 40%, rgba(76, 37, 76, 0.856) 100%);
 
 }
 
@@ -62,9 +62,9 @@ a {
 }
 .button-label {
   background: rgb(213, 213, 235);
-  background: linear-gradient(331deg, rgb(224, 224, 248) 10%, rgb(227, 217, 232) 29%, rgb(255, 243, 255) 100%);
+  background: linear-gradient(331deg, rgb(208, 208, 249) 10%, rgb(227, 217, 232) 29%, rgb(255, 243, 255) 100%);
   color: rgb(59, 12, 229);
-  box-shadow: .5rem .5rem 1rem rgb(114, 183, 247);
+  box-shadow: .5rem .5rem 1rem rgb(88, 148, 205);
 }
 
 

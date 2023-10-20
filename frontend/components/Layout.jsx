@@ -20,10 +20,9 @@ function Navigation() {
   }
 
   return (
-    <header className="bg-yellow-800 background navbar sticky top-0">
-
-      <nav className=" flex justify-between p-4 px-2">
-        <div className="flex justify-between items-center w-full mx-16">
+    <header className="bg-yellow-800 background navbar sticky">
+      <nav className=" flex justify-between p-4 px-6">
+        <div className="flex justify-between items-center w-full">
           <div className="xl:w-1/3">
             <Link
               className="block text-2xl max-w-max text-white font-medium title"
@@ -58,7 +57,7 @@ function Navigation() {
                 ) : (
                   <div className="flex items-center justify-end">
                     <Link
-                      className="inline-block py-2 px-4 mr-2 leading-5 text-gray-500  hover:text-yellow-200 font-medium bg-transparent rounded-md links"
+                      className="inline-block py-2 px-4 mr-2 leading-5 text-gray-500  hover:text-lime-500 font-medium bg-transparent rounded-md links"
                       href="/login"
                     >
                       Log In
@@ -93,7 +92,7 @@ export default function Layout(props) {
       </Head>
       <Navigation />
       <Cart />
-      <div className="container mt-6 px-4">{props.children}</div>
+      <div className="container mx-auto px-6">{props.children}</div>
     </div>
   );
 }

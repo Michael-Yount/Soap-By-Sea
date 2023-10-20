@@ -60,17 +60,17 @@ export default function Cart() {
   }
 
   return (
-    <section className="fixed right-5 top-[220px]">
+    <section className="right-20">
       <div className="relative">
         <button
           onClick={() => setShowCart((prevState) => !prevState)}
-          className="absolute right-0 z-10 bg-green-400 text-black p-3 rounded-full hover:bg-yellow-500 items-center"
+          className="absolute right-8 top-8 bg-sky-300 z-10 p-3 rounded-full hover:bg-teal-300 items-center background"
         >
         <Image
           src={cartIcon}
           alt="cart_icon"
-          width={32}
-          height={32}    
+          width={45}
+          height={45}    
         />
         </button>
         {showCart && (

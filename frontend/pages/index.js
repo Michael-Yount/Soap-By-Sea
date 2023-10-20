@@ -15,9 +15,9 @@ export default function Home() {
 
        
       </Head>
-      <main className="mx-auto container m-6">
+      <main className="mx-auto container m-6 w-full">
         <div className="mb-6">
-          <span className="span"></span>
+          
         </div>
         <SoapTypeList query={query} />
       </main>
