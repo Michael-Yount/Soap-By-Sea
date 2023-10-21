@@ -96,7 +96,7 @@ export default function Layout(props) {
         <h1 className="head_text text-center">
             Soap by Seá
             <br  />
-            <span className="text-center">
+            <span className="text-center second_title">
                  Artisan Handcrafted Soap
             </span>
         </h1>
