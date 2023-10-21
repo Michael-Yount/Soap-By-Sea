@@ -92,6 +92,18 @@ export default function Layout(props) {
       </Head>
       <Navigation />
       <Cart />
+      <section className="w-full flex-center flex-col">
+        <h1 className="head_text text-center">
+            Soap by Seá
+            <br  />
+            <span className="text-center">
+                Handcrafted Soap
+            </span>
+        </h1>
+        <p className=" text-center">
+        Enjoy Our Quality Products
+        </p>
+    </section>
       <div className="container mx-auto px-6">{props.children}</div>
     </div>
   );
