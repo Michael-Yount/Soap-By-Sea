@@ -68,8 +68,11 @@ a {
 }
 
 .head_text {
-  font-size: 10rem;
+  font-size: 8rem;
   padding: 2rem;
+  text-shadow: .5rem .5rem .5rem rgba(28, 28, 224, 0.377);
+  color: rgb(162, 5, 120);
+  background-image: url("/frontend/public/bubblesSuds400.png");
 }
 
 .gradient {

@@ -97,7 +97,7 @@ export default function Layout(props) {
             Soap by Seá
             <br  />
             <span className="text-center">
-                Handcrafted Soap
+                 Artisan Handcrafted Soap
             </span>
         </h1>
         <p className=" text-center">
