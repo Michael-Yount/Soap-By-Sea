@@ -8,6 +8,7 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
+        'bubbles': "url('/frontend/public/bubblesSuds400.png')",
       },
     },
   },

@@ -9,6 +9,9 @@ const Cart = dynamic(() => import("@/components/Cart"), { ssr: false });
 import Head from "next/head";
 import Link from "next/link";
 
+import Image from 'next/image';
+import bubbles from '../public/bubblesSuds400.png'
+
 function Navigation() {
   const { user, setUser } = useAppContext();
   const router = useRouter();
@@ -79,6 +82,7 @@ function Navigation() {
   );
 }
 
+
 export default function Layout(props) {
   const title = "Soap by Seá";
 
@@ -93,17 +97,18 @@ export default function Layout(props) {
       <Navigation />
       <Cart />
       <section className="w-full flex-center flex-col">
-        <h1 className="head_text text-center">
+        <h1 className="head_text text-center bg-bubbles">
             Soap by Seá
             <br  />
             <span className="text-center second_title">
-                 Artisan Handcrafted Soap
+                 Artisan Crafted Soap
             </span>
         </h1>
-        <p className=" text-center">
+        <p className=" text-center third_title">
         Enjoy Our Quality Products
         </p>
     </section>
+    
       <div className="container mx-auto px-6">{props.children}</div>
     </div>
   );

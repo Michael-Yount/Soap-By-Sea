@@ -21,6 +21,7 @@ export const AppProvider = ({ children }) => {
       setUser(userData);
     };
     fetchData();
+    setShowCart(false);
   }, []);
 
   useEffect(() => {

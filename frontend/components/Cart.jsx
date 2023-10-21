@@ -55,7 +55,7 @@ export default function Cart() {
   }
 
   function cartRedirect() {
-    setShowCart(false);
+    setShowCart(true);
     router.push("/checkout");
   }
 
