@@ -60,7 +60,7 @@ export default function Cart() {
   }
 
   return (
-    <section className="right-20">
+    <section className="right-20 sticky top-20">
       <div className="relative">
         <button
           onClick={() => setShowCart((prevState) => !prevState)}

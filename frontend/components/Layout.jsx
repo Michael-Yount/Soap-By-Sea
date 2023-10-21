@@ -23,7 +23,7 @@ function Navigation() {
   }
 
   return (
-    <header className="bg-yellow-800 background navbar sticky">
+    <header className="bg-yellow-800 background navbar sticky top-0 z-50">
       <nav className=" flex justify-between p-4 px-6">
         <div className="flex justify-between items-center w-full">
           <div className="xl:w-1/3">
@@ -38,7 +38,7 @@ function Navigation() {
           <div className="xl:block xl:w-1/3">
             <div className="flex items-center justify-end">
               <Link
-                className="px-5 text-gray-50  hover:text-yellow-200 font-medium links"
+                className="text-gray-50  hover:text-yellow-200 font-medium links"
                 href="/"
               >
                 Home
@@ -60,7 +60,7 @@ function Navigation() {
                 ) : (
                   <div className="flex items-center justify-end">
                     <Link
-                      className="inline-block py-2 px-4 mr-2 leading-5 text-gray-500  hover:text-lime-500 font-medium bg-transparent rounded-md links"
+                      className="inline-block py-2 px-4 mr-1 leading-5 text-gray-500  hover:text-lime-500 font-medium bg-transparent rounded-md links"
                       href="/login"
                     >
                       Log In
@@ -105,7 +105,7 @@ export default function Layout(props) {
             </span>
         </h1>
         <p className=" text-center third_title">
-        Enjoy Our Quality Products
+        Enjoy My Quality Products!
         </p>
     </section>
     
